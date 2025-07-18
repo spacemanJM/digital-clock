@@ -1,0 +1,16 @@
+body {
+    background-color: lightslategray;
+}
+
+.clockLabels {
+    font-family: 'Orbitron', sans-serif;
+}
+
+#clockText {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    text-align: center
+}
