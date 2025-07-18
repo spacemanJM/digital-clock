@@ -1,5 +1,21 @@
 body {
-    background-color: lightslategray;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("DigitalBackground.jpg");
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("DigitalBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    z-index: -1;
 }
 
 .clockLabels {
@@ -7,6 +23,8 @@ body {
 }
 
 #clockText {
+    color: white;
+    font-weight: bold;
     height: 100vh;
     display: flex;
     justify-content: center;

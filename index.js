@@ -15,7 +15,7 @@ function displayTime() {
 
     hours > 12 ? hourLabel.textContent = hours - 12: hourLabel.textContent = hours;
     minuteLabel.textContent = `: ${minutes} :`;
-    secondLabel.textContent = seconds;
+    secondLabel.textContent = ` ${seconds}`;
 }
 
 const updateTime = setInterval(displayTime, 1000);
